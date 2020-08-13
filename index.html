@@ -47,7 +47,7 @@ document.oncontextmenu=new Function("alert(message);return false")
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
     <script type="text/javascript"> </script>
 </head>
-<canvas id="canvas"></canvas>
+
     <style>
         body {
   margin: 0;
@@ -65,7 +65,7 @@ document.oncontextmenu=new Function("alert(message);return false")
   left: 1em;
   letter-spacing: 1px;
 }
-    </style> <scipt>var canvas = document.getElementById('canvas');
+    </style> <script>var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var raf = requestAnimationFrame;
 var caf = cancelAnimationFrame;
@@ -184,6 +184,7 @@ document.onmousemove = function(e) {
 };
 goo.update(W/2, H/2, 0, 0);
     </script>
+    <id="canvas"></canvas>
 <body>
 
     <div class="main-content" id="home">
