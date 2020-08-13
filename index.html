@@ -21,20 +21,19 @@
 </head>
 
 <body>
-    <!-- Konten Utama  -->
-    
+\
     <div class="main-content" id="home">
         
         <div class="layer">
-            <!-- header -->
             <header class="header">
                 <div class="container-fluid px-lg-5">
                 </div>
             </header>
-            <!-- Banner -->
+          
             <div class="banner-info-w3ls">
                 <h1>EZRQXZ
                 </h1>
+                <p>Hey, Im Ezra. Welcome to my personal website!</p>
                 <div class="social mb-4">
                     <ul>
                         <li><a href="https://www.facebook.com/ezrq.mighty"><span class="fa mr-2 fa-facebook"></span></a></li>
@@ -44,13 +43,10 @@
                     </ul>
                 </div>
             </div>
-            <!-- //Banner -->
+
         </div>
     </div>
-    <!--// Konten Utama -->
- 
-    <!-- gallery -->
-    <!--/Testimoni-->
+
     <style>:root {
             --primary-color: #302AE6;
             --secondary-color: #536390;
@@ -144,10 +140,77 @@ input:checked + .slider:before {
         <div class="container py-lg-5 p-3">
             <div class="inner-sec-w3ls-pyt speak">
                     <div class="theme-switch-wrapper">
-        
+         
+                         <!-- --->
+                         <script>
+                         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    toggleSwitch.addEventListener('change', switchTheme, false);
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); 
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }    
+}
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
 
 
 </script>
+
+<!--   <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                          </label>
+                        -->
+                          
+                          
+                        </div>
+                <h3 class="title"><span>Promotion</span></h3>
+                <p>want a promotion? Just Talk me on Instagram!</p>
+                <div class="row mt-lg-5 mt-4">
+
+                    <div class="col-lg-6 test-grid text-left">
+                        <div class="row">
+                            <div class="col-md-4 test-img">
+                                <img src="images/icon.png" class="img-fluid" alt="server">
+                            </div>
+                            <div class="col-md-8 test-info">
+                                <h3 class="mt-md-4 mt-3"><span class="sub-tittle-team">Title</span><p> </p>Subtitle</h3>
+                                <h6>Descriptions:</h6>
+                                <p>Somethings
+                                        </p>
+                                <div class="social mt-4">
+                                    <ul>
+                                        <a href="https://discord.gg/aJm8CGs"><span class="discord">> Discord</span></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div><!---->
+    </section>
+
     <footer class="py-5 text-center">
         <div class="container">
             <div class="agileinfo-grids">
@@ -156,12 +219,13 @@ input:checked + .slider:before {
                 </div>
             </div>
             <div class="copyright text-center mb-4">
-                <p>© EzraMighty 2019 - 2020 . All Rights Reserved | Design by EzraMighty</a> </p>
-                <p>Contact me: ezrqmc@ezramighty.net</p>
+                <p>© EZRQXZ 2019 - 2020 . All Rights Reserved | Design by Ezra</a> </p>
             </div> 
             <a href="#home" class="move-top scroll"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
         </div>
     </footer>
+    <!-- //footer -->
+
 </body>
 
 </html>
