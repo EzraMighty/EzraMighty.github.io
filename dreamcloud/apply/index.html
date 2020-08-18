@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>DreamCloud - Applications</title>
+<body>
+<center>
+<h1>Applying DreamCloud Staff</h1>
+<form action="//submit.form" id="" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") { alert('Wajib isi Nama depan.'); frm.First_Name.focus(); return false; }
+if (frm.Last_Name.value == "") { alert('Wajib isi Nama IGN.'); frm.Last_Name.focus(); return false; }
+if (frm.Email_Address.value == "") { alert('Wajib isi Alamat email'); frm.Email_Address.focus(); return false; }
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) { alert('Tolong isi alamat email yang benar.'); frm.Email_Address.focus(); return false; }
+if (frm.Position.value == "") { alert('Wajib isi Posisi apa.'); frm.Position.focus(); return false; }
+return true; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><b>Nama *</b></label><br />
+<input name="First_Name" type="text" maxlength="50" style="max-width: 260px" />
+</td> <td style="width: 50%">
+<label for="Last_Name"><b>Nama IGN (In Game Name) *</b></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><b>Alamat Email *</b></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="max-width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><b>Posisi yang anda lamar (Admin/Mod/Builder/Helper) *</b></label><br />
+<input name="Position" type="text" maxlength="100" style="max-width: 535px" />
+</td> </tr> <tr> <td>
+<input name="Fax" type="text" maxlength="50" style="max-width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Tolong baca dan setujui peraturan didreamcloud'); return false; }">
+<input type="checkbox" name="checkbox" value="check" id="agree" /> Saya sudah membaca dan menyetujui peraturan yang ada!
+<input type="submit" name="submit" value="submit" />
+</form>
+<label for="Reference"><b>Reference / Comments / Questions</b></label><br />
+<textarea name="Reference" rows="7" cols="40" style="max-width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+<div style="float: right"> <a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+<script src="https://www.100forms.com/js/FORMKEY:43WGGZ6QYKN2/SEND:admin@ezrq.ml" type="text/javascript"></script>
+<input name="skip_submit" type="submit" value="Kirim Lamaran" />
+</td> </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
