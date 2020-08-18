@@ -413,13 +413,9 @@ li > a:only-child:after {
 /*-- banner --*/
 
 .main-content {
-    background: url('https://thumbs.gfycat.com/FairWelcomeIrishdraughthorse-size_restricted.gif') no-repeat center center fixed;
-	    /*(https://cdn.glitch.com/9a6be477-0a21-4c01-9476-da1f8d9bc096%2Fphoto-1496542386008-62c44d5acbaa.jpg?1559314079503) no-repeat center;*/
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
+    background: url('https://thumbs.gfycat.com/FairWelcomeIrishdraughthorse-size_restricted.gif') 
+background-position: center;
+background-size: cover;
     min-height: 48em;
     position: relative;
 }
